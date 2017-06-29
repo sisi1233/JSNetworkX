@@ -263,7 +263,7 @@ export function draw(G, config, optBind) {
   // these will be used as edge labels if no others are provided
   if (weighted) {
     var weights = config.weights;
-    switch (typeof weigths) {
+    switch (typeof weights) {
       case 'object':
         weightFunc = function(d) {
           return getDefault(weights[d.node], 1);
